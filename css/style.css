@@ -1,0 +1,154 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0D0D0D;
+    overflow: hidden;
+}
+#spinner{
+    z-index: 999999999;
+    background-color: #0D0D0D;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   display: flex;
+}
+input::placeholder{
+    color: gray !important;
+}
+.bg-input{
+    background-color: rgb(248, 215, 218);
+}
+/* ==========NavBar========== */
+.asideNav{
+    min-height: 100vh;
+    width: 326;
+    position: fixed;
+    left: -257px;
+    z-index: 99;
+    
+}
+.navContent{
+    min-height: 100vh;
+    width: 257px;
+    color: #ffffff !important;
+    background-color: #0D0D0D;
+  
+}
+.navLogo{
+    min-height: 100vh;
+    width: 66px;
+    color: #0D0D0D !important;
+    background-color: #ffffff;
+    
+    
+
+}
+.navLogo #open{
+    cursor: pointer;
+}
+.navLogo #close{
+    display: none;
+    cursor: pointer;
+}
+.navContent ul li{
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    transition: text-decoration 0.3s;
+  
+    
+}
+.navContent ul li:hover{
+    text-decoration: underline;
+}
+
+/* ==========First Page========== */
+#project{
+    display: block;
+}
+.item , #category .itemCategory,
+#projectCategoryDetails .itemCategoryDetails,
+#projectArea .itemAreaDetails,
+#projectIngredients .itemIngredientsDetails,.itemSearchDetails{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item .layer,#category .itemCategory .layerCategory,
+#projectCategoryDetails .itemCategoryDetails .layerCategoryDetails,
+#projectArea .itemAreaDetails .layerAreaDetails,
+#projectIngredients .itemIngredientsDetails .layerIngredientsDetails,
+.layerSearchDetails{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s;
+    
+}
+.item:hover .layer,#category .itemCategory:hover .layerCategory,
+#projectCategoryDetails .itemCategoryDetails:hover .layerCategoryDetails,
+#projectArea .itemAreaDetails:hover .layerAreaDetails,
+#projectIngredients .itemIngredientsDetails:hover .layerIngredientsDetails,
+.itemSearchDetails:hover .layerSearchDetails{
+    top: 0%;
+}
+/* ==========Desc Page========== */
+#projectDesc{
+    display: none;
+}
+.recipesEdit{
+    background-color: #CFF4FC;
+    color: #114b6d;
+    padding: 7px;
+    border-radius: 7px;
+}
+.tagsEdit{
+    background-color: #F8D7DA;
+    color: #A22029;
+    padding: 7px;
+    border-radius: 7px;
+}
+/* ==========Category Page========== */
+#projectCategory{
+    display: none;
+}
+
+/* ==========Category Details Page========== */
+#projectCategoryDetails{
+    display: none;
+}
+
+/* ==========Area Page========== */
+#projectArea .itemArea{
+    cursor: pointer;
+}
+
+/* ==========Ingredients Page========== */
+
+.itemIngredients{
+    cursor: pointer;
+}
+
+/* ==========Search Page========== */
+#projectSearch{
+    display: none;
+}
+
+/* ==========Contact Page========== */
+#projectContact{
+    display: none;
+}
+#projectContact p{
+    display: none;
+}
